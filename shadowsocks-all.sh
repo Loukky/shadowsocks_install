@@ -523,7 +523,8 @@ elif [ "${selected}" == "4" ]; then
     "nameserver":"8.8.8.8",
     "mode":"tcp_and_udp",
     "plugin":"obfs-server",
-    "plugin_opts":"obfs=${shadowsocklibev_obfs}"
+    "plugin_opts":"obfs=${shadowsocklibev_obfs}",
+    "ipv6_first":true
 }
 EOF
     else
@@ -537,7 +538,8 @@ EOF
     "method":"${shadowsockscipher}",
     "fast_open":${fast_open},
     "nameserver":"8.8.8.8",
-    "mode":"tcp_and_udp"
+    "mode":"tcp_and_udp",
+    "ipv6_first":true
 }
 EOF
     fi
